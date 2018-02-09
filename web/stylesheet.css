@@ -1,0 +1,135 @@
+/* 
+    Document   : stylesheet
+    Created on : Oct 23, 2015, 5:00:57 PM
+    Author     : OM
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root { 
+    display: block;
+}
+body
+{
+   margin:0;
+   color:#141412;
+}
+.top
+{
+    background-color:rgb(61,55,57);
+    height:30px;
+    color:white;
+    font-size:22px;
+    font-style:italic;
+}
+.menu
+{
+    background-color:rgb(242,162,126);
+}
+ul li
+{
+    list-style-type:none;
+    float:left;
+}
+ul li a
+{
+    text-decoration:none;
+    float:left;
+    margin:10px;
+    margin-bottom:15px;
+    color:navy;
+    font-size:22px;
+    text-align:center;
+    margin-left:30px;
+}
+
+ul li a:hover
+{
+    color:teal;
+}
+.img_slide
+{
+    background-color:rgb(234,232,230);
+}
+.lbl_txt
+{
+    font-size:18px;
+    font-style:bold;
+    color:blue;
+}
+.txt
+{
+    font-size:18px;
+    color:black;
+    background-color:rgb(235,178,244);
+}
+.btn
+{
+    font-size:20px;
+    color:maroon;
+    background-color:silver;
+}
+.field_name
+{
+    background:rgb(118,114,104);
+    color:white;
+}
+.view_field
+{
+    background:rgb(150,234,238);
+    font-size:20px;
+    font-weight:600;
+    font-style:italic;
+    color:red;
+}
+a:hover
+{
+    color:#008400;
+    font-weight:bolder;
+}
+.footer_ul li
+{
+    list-style-type:none;
+    float:left;
+}
+.footer_ul li a
+{
+    text-decoration:none;
+    float:left;
+    margin:10px;
+    margin-bottom:15px;
+    color:navy;  
+    text-align:center;
+    margin-left:30px;
+}
+.footer a:hover
+{
+    color:rgb(51,209,209);
+    font-weight:bolder;
+    text-decoration:underline;
+}
+a:visited
+{
+    color:purple;
+}
+h3
+{
+    color:white;
+    text-align:center;  
+    font-family:Lucida Handwriting;
+}
+.footer
+{
+    background-color:rgb(110,100,104);
+}
+
+
+
+
+
+

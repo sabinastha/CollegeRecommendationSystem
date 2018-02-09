@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="js/jquery.min.js">
+         <script  type="text/javascript">
+
+  var array;
+  $.get("https://ipinfo.io/json", function (response) {
+    $("#ip").html('<span class="iptitle" > Your IP:</span> ' + response.ip);
+    var array = response.loc.split(',')
+    //  $("#lat").val(array[0]);
+    // //$("#lat").val('40.86460000001');
+    //  $("#long").val( array[1]);
+    $.ajax(function(){
+      url:'iplocation.jsp',
+      method:"POST",
+      data:{
+        lat: $("#lat").val(array[0]);
+        lng: $("#long").val( array[1]);
+      }
+    });
+   // $("#long").val( '-73.94815239999');  
+    $("#address").html(' <span class="loc"> Location:</span> ' + ' ' +response.city   + ',' + response.region);
+    //$("#details").html(JSON.stringify(response, null, 4));
+}, "jsonp");
+    </head>
+    <body>
+     
+
+  
+</script>
+    </body>
+</html>
